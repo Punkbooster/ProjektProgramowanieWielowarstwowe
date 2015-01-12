@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="au_StronaWzorcowa.master.cs" Inherits="au_StronaWzorcowa" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="au_RegułyStylu.css" rel="stylesheet" />
+    <script src="au_ZestawSkryptów.js"></script>
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 635px;
+        }
+        .style2
+        {
+            width: 109px;
+        }
+    </style>
+    
+</head>
+
+<body onload = "RotacjaBannerow()">
+    <div id="PojemnikStrony">
+        <div id="NagłówekStrony">
+            <div id="LogoFirmy">
+                <img src="Images/LogoFirmy.jpg"
+                alt = "logo firmy, projektanta witryny" />
+                </div>            <!-- zamkniencie pojemnika logo firmy -->
+
+             <div id="BannerFirmy">   
+                <img src="Images/BannerFirmy.jpg"
+                alt = "Banner Firmy"
+                    onmouseover ="this.src='Images/BannerRollover.jpg'" 
+                    onmouseout ="this.src='Images/BannerFirmy.jpg'" 
+                    />
+                </div> <!-- zamkniencie pojemnika banner firmy -->
+
+            <div id="PartnerzyFirmy">
+                Nasi partnerzy biznesowi: <br />
+                <a href="javascript: void(0)" aria-orientation="horizontal">
+                    <img src="Images/banner0.jpg"
+                        alt ="Banner firmy partnerskiej" width ="150" height="60" />
+                    </a>
+               </div>  <!-- zamkniencie pojemnika partnerzy firmy -->
+
+            </div> <!-- zamkniencie pojemnika naglowek stronyy -->
+        
+        </div> <!-- zamkniencie pojemnika Pojemnik strony -->
+   
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:100%;">
+            <tr>
+                <td class="style1">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Medium" 
+                        Text="Jestesz zalogowany jako:"></asp:Label>
+                </td>
+                <td class="style2">
+                    <asp:LoginName ID="LoginName1" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" Font-Strikeout="False" />
+                </td>
+                <td>
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" LoginText="Zaloguj się!" 
+                        LogoutPageUrl="~/au_RejestracjaNowychUrzytkoników.aspx" 
+                        LogoutText="Wyloguj się!" />
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
+

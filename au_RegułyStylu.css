@@ -1,0 +1,109 @@
+
+body {
+}
+#PojemnikStrony
+{
+	width: 1100px;
+	margin: 0 auto;
+	height: auto;
+	color : black;
+}
+
+#NagłówekStrony
+{
+	width: 1100px;
+	height: 100px;
+	background: rgb(90,220,240);
+	}
+	
+#PojemnikLewy {
+	width: 250px;
+	height: 200px;
+	float: left;
+	overflow: hidden;
+	padding: 0px 5px 0px 5px;
+	background: rgb(100,180,240);
+	}
+	
+#PojemnikCentrlny {
+	width:  550px;
+	height: 200px;
+	float: left;
+	overflow: hidden;
+	padding: 0px 15px 0px 15px;
+	background: rgb(150,220,240);
+	}
+
+#pojemnikPrawy {
+	width: 250px;
+	height: 200px;
+	overflow: hidden;
+	padding: 0px 15px 0px 15px;
+	float: left;
+	background: rgb(100,180,240);
+	}
+	
+#Stopka {
+	clear: both;
+	background: rgb(150,180,240);
+	overflow: hidden;
+	height: 50px;
+	width: inherit;
+	height: 50px;
+	padding: 0px 0px 0px 0px;
+	}
+	
+#LogoFirmy {
+	width: 300px;
+	height: 100px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+	}
+	
+#BannerFirmy {
+	width: 600px;
+	height: 100px;
+	float: left;
+	padding: 0px 0px 0px 0px;
+	}
+	
+#PartnerzyFirmy {
+	text-align:center;
+	width: 200px;
+	height: 100px;
+	float: left;
+	padding: 0px 0px 0px 0px;
+	background: rgb(0,183,239);
+	}
+	
+#MenuPoziomowe {
+	clear: both;
+	height: 50px;
+	float: left;
+	width: inerit;
+	margin: o auto;
+	background: rgb(204, 255, 255);
+	}
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
